@@ -1,4 +1,3 @@
-# ManageFootballPlayer
 # QUẢN LÝ CẦU THỦ BÓNG ĐÁ
 
 Dự án cuối khóa môn Lập trình C/C++ — ứng dụng console quản lý danh sách cầu thủ của một đội bóng.
@@ -9,8 +8,8 @@ Chương trình cho phép quản lý thông tin cầu thủ (mã, họ tên, v�
 lưu trong bộ nhớ RAM bằng `struct` kết hợp mảng một chiều tĩnh. Người dùng thao tác qua menu điều khiển
 lặp (do-while + switch-case) với đầy đủ chức năng CRUD, tìm kiếm, thống kê và sắp xếp.
 
-**Công nghệ:** Ngôn ngữ C, giao diện dòng lệnh (Console). Không dùng cơ sở dữ liệu, giao diện đồ họa hay
-thư viện nâng cao.
+**Công nghệ:** Mã nguồn viết bằng C, lưu dưới đuôi `.cpp` và biên dịch bằng `g++` để đảm bảo không bị lỗi.
+Giao diện dòng lệnh (Console). Không dùng cơ sở dữ liệu, giao diện đồ họa hay thư viện nâng cao.
 
 ## Tính năng
 
@@ -27,7 +26,7 @@ thư viện nâng cao.
 
 ```
 .
-├── main.c              # mã nguồn chính
+├── main.cpp            # mã nguồn chính (viết bằng C, đuôi .cpp)
 ├── README.md           # tài liệu dự án
 ├── .gitignore          # loại trừ file biên dịch
 └── screenshots/        # ảnh chụp màn hình demo
@@ -46,11 +45,12 @@ thư viện nâng cao.
 
 ## Cách biên dịch và chạy
 
-Yêu cầu: trình biên dịch GCC (MinGW trên Windows, hoặc gcc có sẵn trên Linux/macOS).
+Yêu cầu: trình biên dịch G++ (MinGW trên Windows, hoặc g++ có sẵn trên Linux/macOS).
+Vì mã nguồn dùng đuôi `.cpp` nên biên dịch bằng `g++`:
 
 ```bash
 # Biên dịch
-gcc main.c -o quanlycauthu
+g++ main.cpp -o quanlycauthu
 
 # Chạy chương trình
 # Windows:
